@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - EasyApply{% endblock %}
+{% block content %}
+<div class="dashboard-container">
+    <div class="dashboard-welcome">
+        <div>
+            <span class="eyebrow">YOUR CAREER WORKSPACE</span>
+            <h1>Make your next move.</h1>
+            <p>Your job search, organized around what matters to you.</p>
+        </div>
+        <a href="/ai-jobs" class="btn">Explore matching jobs <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <div class="dashboard-grid">
+        <a href="/resumes" class="dashboard-card dashboard-card-resume">
+            <span class="dashboard-card-icon">▤</span><span class="card-kicker">YOUR FOUNDATION</span>
+            <h2>Resumes</h2><p>Keep your experience ready. Upload versions for different roles and let the agent find the best fit.</p>
+            <span class="card-link">Manage resumes <b>↗</b></span>
+        </a>
+
+        <a href="/ai-jobs" class="dashboard-card dashboard-card-agent">
+            <span class="dashboard-card-icon">✳</span><span class="card-kicker">FIND YOUR FIT</span>
+            <h2>AI Job Agent</h2><p>Discover relevant openings and get a clearer picture of how your profile matches.</p>
+            <span class="card-link">Discover jobs <b>↗</b></span>
+        </a>
+
+        <a href="/applications" class="dashboard-card dashboard-card-applications">
+            <span class="dashboard-card-icon">↗</span><span class="card-kicker">KEEP YOUR MOMENTUM</span>
+            <h2>Applications</h2><p>Review the submission results EasyApply records for the roles you chose.</p>
+            <span class="card-link">View applications <b>↗</b></span>
+        </a>
+    </div>
+    <section class="overview-guide" aria-labelledby="overviewGuideTitle">
+        <div class="overview-section-heading">
+            <span class="eyebrow">ABOUT EASYAPPLY</span>
+            <h2 id="overviewGuideTitle">Your job search, step by step.</h2>
+            <p>EasyApply brings resume preparation, job discovery, and application tracking into one workspace. You stay in control of which opportunities move forward.</p>
+        </div>
+        <ol class="overview-steps">
+            <li><span>01</span><div><h3>Set up your profile</h3><p>Add your experience, preferred roles, and locations so recommendations have useful context.</p><a href="/profile">Complete your profile ↗</a></div></li>
+            <li><span>02</span><div><h3>Upload your resumes</h3><p>Upload PDF or DOCX versions. EasyApply extracts and analyzes resume text to help match openings.</p><a href="/resumes">Manage resumes ↗</a></div></li>
+            <li><span>03</span><div><h3>Discover and review jobs</h3><p>Run the AI Job Agent to see recommendations and the selected resume. Open Application visits the employer listing without saving an application.</p><a href="/ai-jobs">Explore jobs ↗</a></div></li>
+            <li><span>04</span><div><h3>AutoApply and track</h3><p>AutoApply saves the job and selected resume, then attempts supported submission. “Saved — not confirmed” means the job is recorded; “Applied” means submission was confirmed.</p><a href="/applications">View applications ↗</a></div></li>
+        </ol>
+        <div class="overview-guide-note"><strong>Good to know</strong><p>Job recommendations are temporary until you choose AutoApply. Automated submission is supported only for compatible application flows; EasyApply does not guess answers to custom questions.</p></div>
+    </section>
+    <div class="dashboard-note"><span>✦</span><p><strong>A little more focus, a lot less juggling.</strong><br>Questions or feedback about EasyApply?</p><a href="/contact">Contact the project team ↗</a></div>
+</div>
+{% endblock %}

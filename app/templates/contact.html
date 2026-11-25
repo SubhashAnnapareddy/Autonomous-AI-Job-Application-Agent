@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Contact - EasyApply{% endblock %}
+{% block content %}
+<div class="form-container">
+    <span class="eyebrow">WE’RE HERE TO HELP</span>
+    <h1>Contact EasyApply</h1>
+    <p class="form-subtitle">Send a question, report an issue, or share feedback about the project. Your message is saved for the project team to review.</p>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="contactName">Name</label>
+            <input id="contactName" name="name" type="text" maxlength="120" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" name="email" type="email" maxlength="255" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input id="contactSubject" name="subject" type="text" maxlength="150" required>
+        </div>
+        <div class="form-group">
+            <label for="contactMessageText">Message</label>
+            <textarea id="contactMessageText" name="message" minlength="10" maxlength="3000" rows="6" required></textarea>
+        </div>
+        <button class="btn" id="contactSubmit" type="submit">Send message</button>
+        <p id="contactFormMessage" class="contact-form-message" role="status" aria-live="polite"></p>
+    </form>
+</div>
+{% endblock %}

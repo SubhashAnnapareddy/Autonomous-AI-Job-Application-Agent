@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login - EasyApply
+{% endblock %}
+
+{% block content %}
+
+<div class="form-container auth-card">
+
+    <span class="eyebrow">WELCOME BACK</span>
+    <h1>Good to see you.</h1>
+
+    <p class="form-subtitle">
+        Sign in to pick up where your job search left off.
+    </p>
+
+    <form id="loginForm">
+
+        <div class="form-group">
+            <label for="username">Username</label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+        </div>
+
+        <button type="submit" class="btn">
+            Login
+        </button>
+
+    </form>
+
+    <p id="loginMessage"></p>
+
+    <p class="form-footer">
+        Don't have an account?
+        <a href="/register">Register here</a>
+    </p>
+
+</div>
+
+{% endblock %}

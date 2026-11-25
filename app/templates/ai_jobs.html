@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}AI Job Agent - EasyApply{% endblock %}
+{% block content %}
+<div class="agent-page-container">
+    <div class="agent-page-header">
+        <div>
+            <span class="eyebrow">PERSONALIZED OPPORTUNITY FINDER</span>
+            <h1>Find your next fit.</h1>
+            <p>Discover jobs that line up with your experience. Each role is matched with your profile and best-fit resume.</p>
+        </div>
+        <button id="refreshAiJobs" class="btn" type="button">Run Agent</button>
+    </div>
+    <p class="info-note"><span aria-hidden="true">✦</span> Open Application visits the employer’s job page without saving it. AutoApply saves the application record first, then attempts supported forms. Only submissions confirmed by the job site appear in Applications.</p>
+    <p id="agentMessage"></p>
+    <div id="agentResults" class="agent-results"></div>
+</div>
+{% endblock %}

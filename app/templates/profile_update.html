@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}
+Update Profile - EasyApply
+{% endblock %}
+
+{% block content %}
+
+<div class="form-container">
+
+    <span class="eyebrow">KEEP YOUR DETAILS CURRENT</span>
+    <h1>Update your profile</h1>
+
+    <p class="form-subtitle">
+        Update your personal and professional information.
+    </p>
+
+    <form id="updateProfileForm">
+
+        <div class="form-group">
+            <label for="full_name">Full name</label>
+            <input
+                type="text"
+                id="full_name"
+                name="full_name"
+                placeholder="Enter your full name"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone</label>
+
+            <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone number"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location</label>
+
+            <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Enter your location"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="experience">Experience</label>
+
+            <textarea
+                id="experience"
+                name="experience"
+                placeholder="Describe your experience"
+            ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="education">Education</label>
+
+            <textarea
+                id="education"
+                name="education"
+                placeholder="Enter your education"
+            ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="preferred_roles">
+                Preferred Roles
+            </label>
+
+            <textarea
+                id="preferred_roles"
+                name="preferred_roles"
+                placeholder="Example: Python Developer, FastAPI Developer"
+            ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="preferred_locations">
+                Preferred Locations
+            </label>
+
+            <textarea
+                id="preferred_locations"
+                name="preferred_locations"
+                placeholder="Example: Hyderabad, Bangalore, Remote"
+            ></textarea>
+        </div>
+
+        <button type="submit" class="btn">
+            Save Changes
+        </button>
+
+    </form>
+
+    <p id="updateProfileMessage"></p>
+
+    <p class="form-footer">
+        <a href="/profiles">Back to Profile</a>
+    </p>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home - EasyApply
+{% endblock %}
+
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="eyebrow"><span class="eyebrow-pulse"></span> AI JOB MATCHING · RESUME SELECTION · APPLICATIONS</span>
+        <h1>Find better-fit jobs.<br><span>Apply with confidence.</span></h1>
+        <p>Let AI match openings to your profile and choose the resume that fits. Review every recommendation and apply when you’re ready.</p>
+        <div class="hero-buttons">
+            <a href="/register" class="btn">Get started <span aria-hidden="true">→</span></a>
+            <a href="#how-it-works" class="btn secondary">How it works</a>
+        </div>
+        <div class="hero-proof"><span class="proof-sparkle" aria-hidden="true">✓</span><span>You stay in control. Nothing is submitted without your action.</span></div>
+    </div>
+    <div class="hero-art" aria-label="EasyApply AI job search workflow">
+        <div class="workflow-panel">
+            <div class="workflow-panel-head"><span class="workflow-brand-dot"></span><span>YOUR AI JOB SEARCH</span><span class="workflow-menu">•••</span></div>
+            <div class="workflow-panel-title">A clearer path from search to application</div>
+            <div class="workflow-step"><span class="workflow-step-number">01</span><span class="workflow-step-icon">⌕</span><span class="workflow-step-copy"><strong>Find relevant jobs</strong><small>AI matches roles to your profile</small></span><span class="workflow-check">✓</span></div>
+            <div class="workflow-step"><span class="workflow-step-number">02</span><span class="workflow-step-icon">▤</span><span class="workflow-step-copy"><strong>Choose the right resume</strong><small>Best-fit version selected for each role</small></span><span class="workflow-check">✓</span></div>
+            <div class="workflow-step"><span class="workflow-step-number">03</span><span class="workflow-step-icon">↗</span><span class="workflow-step-copy"><strong>Apply when you’re ready</strong><small>Track the submission result</small></span><span class="workflow-arrow">→</span></div>
+            <div class="workflow-panel-foot"><span>YOUR SEARCH, YOUR CALL</span><span>EasyApply</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="trust-strip" aria-label="Product highlights">
+    <span>AI-POWERED JOB MATCHING</span><i></i><span>RESUME SELECTION</span><i></i><span>APPLICATION TRACKING</span>
+</section>
+
+<section class="features" id="how-it-works">
+    <div class="section-heading">
+        <span class="eyebrow">HOW EASYAPPLY WORKS</span>
+        <h2>Less searching. More focus.</h2>
+        <p>AI takes care of the repetitive parts. You decide which opportunities move forward.</p>
+    </div>
+    <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon icon-violet">⌕</span><span class="feature-number">01</span><h3>Let AI find your fit</h3><p>Get job recommendations based on your experience, profile, and preferred roles.</p></article>
+        <article class="feature-card"><span class="feature-icon icon-mint">◈</span><span class="feature-number">02</span><h3>See why it matches</h3><p>Review match details and relevant skills before choosing what to pursue.</p></article>
+        <article class="feature-card"><span class="feature-icon icon-peach">▤</span><span class="feature-number">03</span><h3>Use the right resume</h3><p>Keep multiple resume versions and let the agent select the best fit for a role.</p></article>
+        <article class="feature-card"><span class="feature-icon icon-blue">↗</span><span class="feature-number">04</span><h3>Keep applications organized</h3><p>Apply to roles you choose and see the submission result in one place.</p></article>
+    </div>
+</section>
+
+<section class="closing-banner">
+    <div><span class="eyebrow">YOUR NEXT STEP STARTS HERE</span><h2>Let AI handle the search.<br>You choose what’s next.</h2></div>
+    <a href="/register" class="btn">Get started <span aria-hidden="true">→</span></a>
+</section>
+
+{% endblock %}

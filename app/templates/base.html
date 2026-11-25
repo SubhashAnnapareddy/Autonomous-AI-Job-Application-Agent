@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}EasyApply{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}?v=13">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/theme.css') }}?v=12">
+</head>
+<body>
+<header class="navbar">
+    <a class="logo" href="/" aria-label="EasyApply home">
+        <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false">
+                <path d="M16 7H8v18h8M8 16h15m-5-5 5 5-5 5" />
+            </svg>
+        </span>
+        <span>EasyApply<span class="logo-dot">.</span></span>
+    </a>
+
+    <div class="nav-right">
+        <nav id="publicNav" aria-label="Main navigation">
+            <a href="/">Home</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a class="nav-cta" href="/register">Get started</a>
+        </nav>
+
+        <nav id="userNav" aria-label="Main navigation" style="display:none;">
+            <a href="/dashboard">Overview</a>
+            <a href="/ai-jobs">Discover jobs</a>
+            <a href="/resumes">Resumes</a>
+            <a href="/applications">Applications</a>
+            <a href="/profile">Profile</a>
+            <a href="/contact">Contact</a>
+            <a href="#" id="logoutButton">Sign out</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+    <p><span>EasyApply</span> · A clearer path to your next role.</p>
+    <div class="site-footer-links">
+        <a href="/contact">Contact</a>
+        <span>© 2026 EasyApply</span>
+    </div>
+</footer>
+
+<script src="{{ url_for('static', path='js/script.js') }}?v=22"></script>
+</body>
+</html>

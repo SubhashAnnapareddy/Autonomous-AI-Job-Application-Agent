@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Applications - EasyApply{% endblock %}
+{% block content %}
+<div class="dashboard-container">
+    <span class="eyebrow">YOUR JOB SEARCH, IN ONE PLACE</span>
+    <h1 class="applications-heading">Applications</h1>
+    <p class="applications-intro">Jobs you choose with AutoApply are saved here, even if the destination has not confirmed submission.</p>
+    <p class="applications-note">“Saved” means the job is stored in EasyApply but submission is not confirmed. “Applied” means the destination confirmed submission. Employer-side stages such as review or interview are not currently synced from Greenhouse.</p>
+    <p id="applicationsMessage">Loading applications...</p>
+    <div id="applicationsList" class="agent-results"></div>
+</div>
+{% endblock %}

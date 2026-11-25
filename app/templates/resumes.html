@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}
+Resumes - EasyApply
+{% endblock %}
+
+{% block content %}
+
+<div class="resume-container">
+
+    <div class="resume-header">
+
+        <h1>My Resumes</h1>
+
+        <p>
+            Upload a PDF or DOCX. EasyApply analyzes it automatically, then matches the resume to relevant roles.
+        </p>
+
+    </div>
+
+    <div class="resume-upload-card">
+
+        <span class="eyebrow">YOUR CAREER TOOLKIT</span>
+        <h2>Bring your experience with you.</h2>
+
+        <p>
+            Add a PDF or DOCX and keep a separate version for each kind of role.
+        </p>
+
+        <form id="resumeUploadForm">
+
+            <div class="form-group">
+
+                <label for="resumeName">
+                    Resume Name
+                </label>
+
+                <input
+                    type="text"
+                    id="resumeName"
+                    name="resumeName"
+                    placeholder="Example: Python Developer Resume"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="resumeFile">
+                    Select Resume
+                </label>
+
+                <input
+                    type="file"
+                    id="resumeFile"
+                    name="resumeFile"
+                    accept=".pdf,.docx"
+                    required
+                >
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Upload Resume
+            </button>
+
+        </form>
+
+        <p id="resumeUploadMessage"></p>
+
+    </div>
+
+
+    <div class="resume-list-section">
+
+        <h2>Resume library</h2>
+        <p class="resume-library-caption">Your uploaded versions, ready to be matched with relevant opportunities.</p>
+
+        <div
+            id="resumeList"
+            class="resume-grid"
+        >
+
+            <p id="resumeLoading">
+                Loading resumes...
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

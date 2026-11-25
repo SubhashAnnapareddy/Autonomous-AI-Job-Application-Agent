@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}
+Profile - EasyApply
+{% endblock %}
+
+{% block content %}
+
+<div class="profile-container">
+
+    <div class="profile-header">
+        <span class="eyebrow">YOUR PROFESSIONAL SNAPSHOT</span>
+        <h1>Profile</h1>
+
+        <p>
+            Keep your details current so job matches and application forms can use the right information.
+        </p>
+    </div>
+
+
+    <div class="profile-card">
+
+        <div class="profile-section">
+
+            <h2>Personal Information</h2>
+
+            <div class="profile-row">
+                <span class="profile-label">Full name</span>
+                <span id="profileFullName">Loading...</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="profile-label">Username</span>
+                <span id="profileUsername">Loading...</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="profile-label">Email</span>
+                <span id="profileEmail">Loading...</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="profile-label">Phone</span>
+                <span id="profilePhone">Loading...</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="profile-label">Location</span>
+                <span id="profileLocation">Loading...</span>
+            </div>
+
+        </div>
+
+
+        <div class="profile-section">
+
+            <h2>Professional Information</h2>
+
+            <div class="profile-row">
+                <span class="profile-label">Experience</span>
+                <span id="profileExperience">Loading...</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="profile-label">Education</span>
+                <span id="profileEducation">Loading...</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="profile-label">Preferred Roles</span>
+                <span id="profileRoles">Loading...</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="profile-label">Preferred Locations</span>
+                <span id="profileLocations">Loading...</span>
+            </div>
+
+        </div>
+
+
+        <div class="profile-actions">
+
+            <a href="/profile/update" class="btn">
+                Update Profile
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
